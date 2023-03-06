@@ -6,7 +6,6 @@ This project creates a console to manage the objects of the larger project.
 > (hbnb) help
 
 > Documented commands (type help <topic>):
-> ========================================
 > EOF  help  quit
 
 > (hbnb) 
@@ -18,7 +17,6 @@ This project creates a console to manage the objects of the larger project.
 > (hbnb)
 
 > Documented commands (type help <topic>):
-> ========================================
 > EOF  help  quit
 > (hbnb) 
 > $
@@ -29,7 +27,6 @@ This project creates a console to manage the objects of the larger project.
 > (hbnb)
 
 > Documented commands (type help <topic>):
-> ========================================
 > EOF  help  quit
 > (hbnb) 
 > $
