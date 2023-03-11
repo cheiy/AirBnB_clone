@@ -16,10 +16,10 @@ class FileStorage:
     def all(self):
         """Returns the dictionary named __objects"""
         return self.__objects
-    
+
     def new(self, obj):
         """Sets __objects the obj with key <obj class name>.id"""
-        __objects = {obj.__class__.__name__:obj.id}
+        __objects = {obj.__class__.__name__: obj.id}
 
     def reload(self):
         """Deserializes the JSON file to __objects only if the JSON file
