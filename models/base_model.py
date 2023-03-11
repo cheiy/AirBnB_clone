@@ -9,7 +9,7 @@ from datetime import datetime, date, time, timezone
 class BaseModel():
     """ Base model class """
 
-    id = uuid4()
+    id = str(uuid4())
     created_at = datetime.now()
     updated_at = datetime.now()
 
@@ -28,7 +28,7 @@ class BaseModel():
         if 'id' in kwargs:
             self.id = kwargs['id']
         else:
-            self.id = uuid4()
+            self.id = str(uuid4())
         if 'my_number' in kwargs:
             self.my_number = kwargs['my_number']
         if 'name' in kwargs:
