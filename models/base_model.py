@@ -9,6 +9,10 @@ from datetime import datetime, date, time, timezone
 class BaseModel():
     """ Base model class """
 
+    id = uuid4()
+    created_at = datetime.now()
+    updated_at = datetime.now()
+
     def __init__(self, *args, **kwargs):
         """ Init method """
         if 'created_at' in kwargs:
