@@ -2,13 +2,11 @@
 """ This module houses the basemodel class """
 
 
-import cmd
-import os
 from uuid import uuid4
 from datetime import datetime, date, time, timezone
 
 
-class BaseModel(cmd.Cmd):
+class BaseModel():
     """ Base model class """
 
     def __init__(self, *args, **kwargs):
