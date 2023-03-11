@@ -10,21 +10,21 @@ class BaseModel():
     """ Base model class """
 
     id = str(uuid4())
-    created_at = datetime.now()
-    updated_at = datetime.now()
+    created_at = str(datetime.now())
+    updated_at = str(datetime.now())
 
     def __init__(self, *args, **kwargs):
         """ Init method """
         if 'created_at' in kwargs:
-            created = str(kwargs['created_at'])
+            created = kwargs['created_at']
             self.created_at = datetime.fromisoformat(created)
         else:
-            self.created_at = datetime.now()
+            self.created_at = str(datetime.now())
         if 'updated_at' in kwargs:
             updated = str(kwargs['updated_at'])
             self.updated_at = datetime.fromisoformat(updated)
         else:
-            self.updated_at = datetime.now()
+            self.updated_at = str(datetime.now())
         if 'id' in kwargs:
             self.id = kwargs['id']
         else:
